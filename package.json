@@ -1,0 +1,25 @@
+{
+  "name": "hue-sun-simulator",
+  "version": "0.1.0",
+  "description": "Simulates sunrise and sunset with Philips Hue lights",
+  "main": "app.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "keywords": [
+    "hue",
+    "sunrise",
+    "sunset"
+  ],
+  "author": "Kim Persson",
+  "license": "MIT",
+  "bin": "bin/index.js",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "node-hue-api": "^2.0.0"
+  },
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "mocha": "^2.3.4"
+  }
+}
