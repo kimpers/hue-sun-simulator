@@ -1,6 +1,6 @@
 {
   "name": "hue-sun-simulator",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Simulates sunrise and sunset with Philips Hue lights",
   "main": "app.js",
   "scripts": {
@@ -14,6 +14,10 @@
   "author": "Kim Persson",
   "license": "MIT",
   "bin": "bin/index.js",
+  "repository" :
+    { "type" : "git"
+    , "url" : "https://github.com/kimpers/hue-sun-simulator"
+    }
   "dependencies": {
     "commander": "^2.9.0",
     "node-hue-api": "^2.0.0"
