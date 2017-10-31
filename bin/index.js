@@ -8,11 +8,11 @@ const program = require('commander');
 
 program
   .version('0.1.0')
-  .command('sunrise <ip> <username> [options...]')
-  .action((ip, username, options) => {
+  .command('sunrise <ip> <username> <lightId> [options...]')
+  .action((ip, username, lightId, options) => {
     const hueApi = new nodeHueApi.HueApi(ip, username);
     const lightState = nodeHueApi.lightState;
-    sunSimulator.sunrise(hueApi, lightState).done(() => console.log('Sunrise simulation successful'),
+    sunSimulator.sunrise(hueApi, lightState, lightId).done(() => console.log('Sunrise simulation successful'),
         (reason) => console.log(`Sunrise simulation failed due to: ${reason}`));
   });
   
