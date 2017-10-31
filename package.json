@@ -17,7 +17,7 @@
   "repository" :
     { "type" : "git"
     , "url" : "https://github.com/kimpers/hue-sun-simulator"
-    }
+    },
   "dependencies": {
     "commander": "^2.9.0",
     "node-hue-api": "^2.0.0"
